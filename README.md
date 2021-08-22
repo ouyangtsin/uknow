@@ -54,50 +54,6 @@ Gitee下载程序源代码 https://gitee.com/uknowing/uknow
 
 4. 参照页面提示，进行安装，直至安装完毕
 
-
-URL重写
-可以通过URL重写隐藏应用的入口文件index.php（也可以是其它的入口文件，但URL重写通常只能设置一个入口文件）,下面是相关服务器的配置参考：
-
-[ Apache ]
-httpd.conf配置文件中加载了mod_rewrite.so模块
-AllowOverride None 将None改为 All
-把下面的内容保存为.htaccess文件放到应用入口文件的同级目录下
-<IfModule mod_rewrite.c>
-  Options +FollowSymlinks -Multiviews
-  RewriteEngine On
-
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
-</IfModule>
-[ IIS ]
-如果你的服务器环境支持ISAPI_Rewrite的话，可以配置httpd.ini文件，添加下面的内容：
-
-RewriteRule (.*)$ /index\.php\?s=$1 [I]
-在IIS的高版本下面可以配置web.Config，在中间添加rewrite节点：
-
-<rewrite>
- <rules>
- <rule name="OrgPage" stopProcessing="true">
- <match url="^(.*)$" />
- <conditions logicalGrouping="MatchAll">
- <add input="{HTTP_HOST}" pattern="^(.*)$" />
- <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
- <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
- </conditions>
- <action type="Rewrite" url="index.php/{R:1}" />
- </rule>
- </rules>
- </rewrite>
-[ Nginx ]
-在Nginx低版本中，是不支持PATHINFO的，但是可以通过在Nginx.conf中配置转发规则实现：
-
-location / { // …..省略部分代码
-   if (!-e $request_filename) {
-   		rewrite  ^(.*)$  /index.php?s=/$1  last;
-    }
-}
-
 #### 参与贡献
 
 1.  Fork 本仓库
