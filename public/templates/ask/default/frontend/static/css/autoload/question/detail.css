@@ -1,0 +1,63 @@
+#uk-question-fixed{padding: 1rem;box-shadow: rgb(238 238 238) 0 0 10px;}
+#uk-question-fixed h3{font-size: 1.3rem;font-weight: bold;}
+#question-content{overflow: hidden}
+#show-all{padding: 0.5rem 0;background: #fff;}
+#show-all a,#show-less a{color:#007bff}
+
+.uk-alpha-hidden {
+    height: 96px;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.uk-alpha-hidden span {
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #007bff;
+    text-align: center;
+    line-height: 22px;
+    color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+.uk-alpha-hidden span i{font-style: normal}
+
+.extend-info{top:0;right: 0}
+.uk-content-info h2.title{
+    color: #121212;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.uk-content-info label a,.uk-content-info a{
+    color: #76839b;
+}
+.uk-content-info .actions a.active{color:#6098f5 }
+
+/*最佳回答*/
+.answer-btn-actions label a.active{color:#0084ff}
+.uk-answer-best{position: absolute;right: 40px}
+.uk-answer-best i{font-size: 36px;color:#0084ff}
+
+.answer-btn-actions a,.actions a{color:#76839b;font-size: 0.9rem}
+.answer-btn-actions .uk-ajax-against,.answer-btn-actions .uk-ajax-agree{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(0,102,255,.1);
+    border-radius: 3px;
+    height: 32px;
+    background: rgba(0,102,255,.1);
+    padding: 0 10px;
+    color: #06f;;
+}
+.answer-btn-actions .uk-ajax-against.active,.answer-btn-actions .uk-ajax-agree.active{
+    background: #06f;
+    color: #fff;
+}

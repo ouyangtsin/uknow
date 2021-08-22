@@ -1,0 +1,41 @@
+em{font-style: normal}
+.uk-home-banner{
+    min-height: 362px;
+    position: relative;
+    background: #999;
+}
+.uk-home-banner span.banner-bg {
+    display: block;
+    width: 100%;
+    height: 362px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+.uk-home-banner i {
+    display: block;
+    width: 100%;
+    height: 362px;
+    background: url(../../../images/napher.png);
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.uk-divider {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 8px;
+    background: #ebebeb;
+}
+
+.uk-author-info{margin:0 auto;}
+.uk-author-box{ width:520px; height:207px; background:url(../../../images/napher02.png); position:relative; z-index:999; border-radius:6px; top:58px; padding:46px 19px 0 19px;}
+.uk-author-box dl dt{ display:block; width:110px; height:110px; border-radius:100px; border:5px solid #ffffff; overflow:hidden; float:left}
+.uk-author-box dl dt img{ display:block; width:100px; height:100px;}
+.uk-author-box dl dd{ float:left; display:block; width:372px; padding-left:15px;}
+.uk-author-box dl dd h2{ display:block; font-size:18px; font-weight:bold; color:#FFF;}
+.uk-author-box dl dd div{ display:block; font-size:12px; color:#ffffff; padding-right:20px; height:22px; line-height:22px; margin:3px 0;}
+.uk-author-box dl dd div p{ display:inline-block}
+.uk-author-box dl dd em{color:#FFF; font-size:12px;}
+.uk-home-user-btn{right: 0;top:-5px}

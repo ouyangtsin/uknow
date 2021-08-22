@@ -1,0 +1,6 @@
+.uk-topic-list  dl{overflow: hidden;margin-bottom: 0;padding: 0.6rem 0;    border-bottom: 1px solid #EFEFEF;}
+.uk-topic-list  dl:last-child{border:none;}
+.uk-topic-list  dt{width: 64px;height: 64px;float: left}
+.uk-topic-list  dt img{width: 64px;height: 64px}
+.uk-topic-list  dd{float: right;width: calc(100% - 74px);margin-bottom: 0}
+.uk-topic-list  dd p{font-size: 0.9rem;color: #999}

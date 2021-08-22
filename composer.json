@@ -1,0 +1,68 @@
+{
+    "name": "uknow/uknoing",
+    "description": "一款基于TP6开发的社交化知识付费问答系统，打造私有社交",
+    "type": "project",
+    "keywords": [
+        "知识付费",
+        "uknoing",
+        "问答系统"
+    ],
+    "homepage": "https://www.uknowing.com/",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "liu21st",
+            "email": "liu21st@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-orm": "^2.0",
+        "topthink/think-view": "^1.0",
+        "topthink/think-captcha": "^3.0",
+        "topthink/think-throttle": "^1.0",
+        "ramsey/uuid": "^3.8",
+        "phpoffice/phpspreadsheet": "^1.8",
+        "overtrue/wechat": "^4.2",
+        "endroid/qr-code": "^3.9",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "ext-fileinfo": "*",
+        "uknow/think-plugin": "^1.6",
+        "uknow/think-multi-app": "^1.1",
+        "ext-zip": "*",
+        "ext-curl": "*",
+        "phpmailer/phpmailer": "^6.4",
+        "zoujingli/pay-php-sdk": "^2.0",
+        "zoujingli/wechat-developer": "^1.2",
+        "kosinix/grafika": "^2.0",
+        "overtrue/pinyin": "^4.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "symfony/var-dumper": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        },
+        "psr-0": {
+            "": "extend/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "secure-http": false
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}

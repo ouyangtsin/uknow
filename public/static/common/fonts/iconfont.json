@@ -1,0 +1,30 @@
+{
+  "id": "2201525",
+  "name": "UKnowing",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9231468",
+      "name": "VIP",
+      "font_class": "VIP",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "15727015",
+      "name": "V认证",
+      "font_class": "Vrenzheng",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "15391361",
+      "name": "话题",
+      "font_class": "huati",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

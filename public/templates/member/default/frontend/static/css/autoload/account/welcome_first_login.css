@@ -1,0 +1,5 @@
+.uk-first-login .first-login-head ul li{background: #eee;border-radius: 10px;padding: 0.5rem}
+.uk-first-login .first-login-head ul li.active{
+    background: #007bff;
+    color: #fff;
+}
